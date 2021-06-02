@@ -4,8 +4,7 @@
 
 <h3>Foods containing <%=@query%></h3>
 
-<% @foods[0..9].each do |f| %>
-
+<% @foods.each do |f| %>
 <ul>
   <li> Description: <%= "#{f.description}"%>
   <li> GTIN/UPC code: <%= "#{f.upc_code}"%>
